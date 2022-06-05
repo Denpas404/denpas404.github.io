@@ -201,7 +201,7 @@ hr {
     }  
 }
 @media only screen and (max-width: 500px){
-    .about_me{
+    .profilpic{
         display: none;        
     }  
     h1{
