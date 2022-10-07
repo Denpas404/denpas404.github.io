@@ -12,7 +12,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/07f3e71541.js" crossorigin="anonymous"></script>
 
-    <title>Portfolio</title>
+    <title>D.Paaske</title>
     <meta charset="UTF-8" />
 </head>
 
@@ -23,7 +23,7 @@
             <img class="logo" src="assets/logo.png" alt="Dennis Paaske logo" />
             <ul id="nav-list">
                 <li><a href="#about-me">Om mig</a></li>
-                <!--<li><a href="#projekter">Projekter</a></li>-->
+                <li><a href="#projekter">Projekter</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <!--<li><a href="#kontakt">Kontakt</a></li>-->
             </ul>
@@ -47,6 +47,9 @@
                         </svg>
                     </a>
                 </div>
+                <div class="some-icon-space">
+
+                </div>
                 <div>
                     <a href="https://www.linkedin.com/in/dennis-paaske" class="some-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="40" height="40"
@@ -62,7 +65,7 @@
     <!-- Hero slut-->
 
     <!-- About me start-->
-    <section class="sub-Section about_me" id="about-me">
+    <section class="sub-Section-about_me about_me" id="about-me">
         <div class="info">
             <h2>Om mig</h2>
             <p>Hej, jeg hedder Dennis, jeg er datatekniker elev med speciale i programmering. <br>
@@ -79,42 +82,45 @@
     <!-- About me Slut-->
 
     <!-- Portfolio Start-->
-    <!--
+
     <section class="sub-Section-projekts" id="projekter">
         <h2>Projekter</h2>
         <div class="projekt-container">
             <div class="projekt-kort">
                 <img class="projekt-image" src="assets/projekt1.jpg" alt="Projekt et billede" />
-                <h3>Projekt 1</h3>
-                <p class="sub-text">Dette er projekt 1 og lidt tekst om det</p>
+                <h3>Password Generator</h3>
+                <p class="sub-text">3. Version af en password generator.<br><br>c# / WPF</p><br>
                 <hr />
-                <p class="sub-text"><a class="projekt-links" href="https://github.com/Denpas404">Link</a></p>
+                <p class="sub-text"><a class="projekt-links"
+                        href="https://github.com/Denpas404/Password_Generator_v3_WPF">Link</a></p>
             </div>
             <div class="projekt-kort">
                 <img class="projekt-image" src="assets/projekt2.jpg" alt="Projekt to billede" />
-                <h3>Projekt 2</h3>
-                <p class="sub-text">Dette er projekt 2 og lidt tekst om det</p>
+                <h3>Ping Ip</h3>
+                <p class="sub-text">Et lille program der kan pinge en ip.<br><br>C# / Console app</p><br>
                 <hr />
-                <p class="sub-text"><a class="projekt-links" href="https://github.com/Denpas404">Link</a></p>
+                <p class="sub-text"><a class="projekt-links" href="https://github.com/Denpas404/Ping_Ip">Link</a></p>
             </div>
             <div class="projekt-kort">
                 <img class="projekt-image" src="assets/projekt3.jpg" alt="Projekt tre billede" />
-                <h3>Projekt 3</h3>
-                <p class="sub-text">Dette er projekt 3 og lidt tekst om det</p>
+                <h3>Github pages website</h3>
+                <p class="sub-text">Koden til min Github page<br><br><br>HTML / CSS</p><br>
                 <hr />
-                <p class="sub-text"><a class="projekt-links" href="https://github.com/Denpas404">Link</a></p>
+                <p class="sub-text"><a class="projekt-links"
+                        href="https://github.com/Denpas404/denpas404.github.io">Link</a></p>
             </div>
             <div class="projekt-kort">
                 <img class="projekt-image" src="assets/projekt4.jpg" alt="Projekt fire billede" />
-                <h3>Projekt 4</h3>
-                <p class="sub-text">Dette er projekt 4 og lidt tekst om det</p>
+                <h3>Password Generator Android</h3>
+                <p class="sub-text">Password generator til Android<br><br>Java</p><br>
                 <hr />
 
-                <p class="sub-text"><a class="projekt-links" href="https://github.com/Denpas404">Link</a></p>
+                <p class="sub-text"><a class="projekt-links"
+                        href="https://github.com/Denpas404/PasswordGeneratorAndroid">Link</a></p>
             </div>
         </div>
     </section>
-    -->
+
     <!-- Portfolio Slut-->
 
     <!-- Resume Start-->
@@ -271,41 +277,9 @@
     </div>
     <!-- Modal slut-->
 
-    <!-- Modal start-->
-    <script scr="assets/scr=app.js">
 
-        const hamburgerButton = document.getElementById('hamburger')
-        const navList = document.getElementById('nav-list')
+    <script src="./js/main.js"></script>
 
-        function toggleButton() {
-            navList.classList.toggle('show')
-        }
-
-        hamburgerButton.addEventListener('click', toggleButton)
-
-
-
-        var modalBtns = document.querySelectorAll('.modal-open');
-
-        modalBtns.forEach(function (btn) {
-            btn.onclick = function () {
-                var modal = btn.getAttribute('data-modal');
-
-                document.getElementById(modal).style.display = "block";
-            }
-        })
-
-        var closeBtns = document.querySelectorAll('.modal-close');
-
-        closeBtns.forEach(function (btn) {
-            btn.onclick = function () {
-                var modal = btn.closest(".modal").style.display = "none";
-
-
-            }
-        })
-    </script>
-    <!-- Modal slut-->
 
 </body>
 
